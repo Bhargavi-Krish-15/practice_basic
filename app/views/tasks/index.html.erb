@@ -1,0 +1,12 @@
+<h1> Descriptions in my Task model </h1>
+
+
+
+
+<ul>
+    <% @tasks.each do |task| %>
+    <% if task.description != nil %>
+    <li><%= task.description%></li>
+    <%end%>
+    <%end%>
+</ul>

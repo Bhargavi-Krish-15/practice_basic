@@ -5,8 +5,8 @@
 
 <ul>
     <% @tasks.each do |task| %>
-    <% if task.description != nil %>
-    <li><%= task.description%></li>
-    <%end%>
+        <% if task.description != nil %>
+            <li><%= link_to task.description , task%></li>
+        <%end%>
     <%end%>
 </ul>
